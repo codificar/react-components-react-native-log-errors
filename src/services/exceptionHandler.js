@@ -10,7 +10,6 @@ export function JSExceptionHandler(url, appType) {
     try {
         setJSExceptionHandler((error) => {
             fetch(`${url}${appTypeUri}${error}&app=${appType}`);
-            Navigation.navigate('ErrorScreen');
         }, true);
     } catch (error) {
         console.log('JSExceptionHandler', error);
