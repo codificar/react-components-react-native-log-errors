@@ -1,13 +1,21 @@
 {
     "name": "react-native-log-errors",
-    "version": "2.0.0",
+    "version": "2.0.1",
     "description": "A component for log errors",
     "scripts": {
       "test": "echo \"Error: no test specified\" && exit 1"
     },
+    "peerDependencies": {
+      "react": "*",
+      "react-native": "*"
+    },
     "repository": {
       "type": "git",
       "url": "git+https://git.codificar.com.br/react-components/react-native-log-errors"
+    },
+    "homepage": "https://git.codificar.com.br/react-components/react-native-log-errors",
+    "bugs": {
+      "url": "https://git.codificar.com.br/react-components/react-native-log-errors"
     },
     "author": "Codificar",
     "license": "MIT",
