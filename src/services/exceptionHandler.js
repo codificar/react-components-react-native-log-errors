@@ -9,14 +9,11 @@ let appType = "";
 
 export function JSExceptionHandler(url, appType) {
   try {
-    if (typeof url !== "string" || appType !== "string") {
-      return;
-    }
-    url = url;
-    appType = appType;
-    setJSExceptionHandler(errorHandler, true);
+      setJSExceptionHandler((error) => {
+          fetch(`${url}${appTypeUri}${error.name} ${error.message}&app=${appType}&native=false`);
+      }, true);
   } catch (error) {
-    console.log("JSExceptionHandler", error);
+      console.log('JSExceptionHandler', error);
   }
 }
 
