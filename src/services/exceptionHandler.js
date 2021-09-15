@@ -13,7 +13,7 @@ export function JSExceptionHandler(url, appType) {
   try {
     setJSExceptionHandler((error) => {
       fetch(
-        `${url}${appTypeUri}${error.name} ${error.message}&app=${appType}&native=false`
+        `${url}${appTypeUri}${error.name} : ${error.message} - ${error.stack}&app=${appType}&native=false`
       );
     }, true);
   } catch (error) {
